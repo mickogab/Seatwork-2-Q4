@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Seconds Calculator</title>
+<head>
+    <title>Document</title>
+</head>
+<body style="background-color: lightblue;">
+    <br>
+    <br>
+    <div class="container bg-light text-center p-5">
+        <center><h1>Seconds Converter</h1>
+        <p>Seconds to Minutes, Hours, and Days</p>
+    
+            <p><input type="text" id="seconds"></p>
+            <input class="btn btn-primary" onClick="SM()" value="To Minutes">
+            <input class="btn btn-primary" onClick="SH()" value="To Hours">
+            <input class="btn btn-primary" onClick="SD()" value="To Days">
+        </th>
+    </tr>
+</table>
+</body>
+<script>
+    function SM(){
+        var x, y
+        x = (document.getElementById('seconds').value);
+        y = 60;
+        alert(x / y);
+    }
+    function SH(){
+        var x, y
+        x = (document.getElementById('seconds').value);
+        y = 3600;
+        alert(x / y);
+    }
+
+    function SD(){
+        var x, y 
+        x = (document.getElementById('seconds').value);
+        y = 86400;
+        alert(x / y);
+    }
+</script>
+</html>
